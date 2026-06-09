@@ -1,0 +1,263 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Hot Coffee",
+      "image": "/images/categories/hot-coffee.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Cold Coffee",
+      "image": "/images/categories/cold-coffee.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Espresso Drinks",
+      "image": "/images/categories/espresso.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Frappes",
+      "image": "/images/categories/frappe.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Tea",
+      "image": "/images/categories/tea.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Bakery",
+      "image": "/images/categories/bakery.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Classic Cappuccino",
+      "categoryId": 1,
+      "price": 4.99,
+      "rating": 4.8,
+      "reviews": 120,
+      "stock": 50,
+      "featured": true,
+      "size": "Medium",
+      "image": "/images/products/cappuccino.jpg",
+      "description": "Rich espresso topped with steamed milk and creamy foam."
+    },
+    {
+      "id": 2,
+      "name": "Caramel Latte",
+      "categoryId": 1,
+      "price": 5.49,
+      "rating": 4.7,
+      "reviews": 98,
+      "stock": 40,
+      "featured": true,
+      "size": "Large",
+      "image": "/images/products/caramel-latte.jpg",
+      "description": "Smooth espresso blended with caramel syrup and milk."
+    },
+    {
+      "id": 3,
+      "name": "Mocha Coffee",
+      "categoryId": 1,
+      "price": 5.99,
+      "rating": 4.9,
+      "reviews": 210,
+      "stock": 30,
+      "featured": true,
+      "size": "Large",
+      "image": "/images/products/mocha.jpg",
+      "description": "Chocolate flavored coffee with whipped cream."
+    },
+    {
+      "id": 4,
+      "name": "Iced Americano",
+      "categoryId": 2,
+      "price": 4.49,
+      "rating": 4.6,
+      "reviews": 75,
+      "stock": 60,
+      "featured": false,
+      "size": "Medium",
+      "image": "/images/products/iced-americano.jpg",
+      "description": "Refreshing cold espresso served over ice."
+    },
+    {
+      "id": 5,
+      "name": "Vanilla Cold Brew",
+      "categoryId": 2,
+      "price": 5.29,
+      "rating": 4.8,
+      "reviews": 150,
+      "stock": 35,
+      "featured": true,
+      "size": "Large",
+      "image": "/images/products/cold-brew.jpg",
+      "description": "Slow-steeped coffee infused with vanilla flavor."
+    },
+    {
+      "id": 6,
+      "name": "Espresso Shot",
+      "categoryId": 3,
+      "price": 2.99,
+      "rating": 4.9,
+      "reviews": 180,
+      "stock": 80,
+      "featured": false,
+      "size": "Single",
+      "image": "/images/products/espresso.jpg",
+      "description": "Pure concentrated coffee shot."
+    },
+    {
+      "id": 7,
+      "name": "Flat White",
+      "categoryId": 3,
+      "price": 4.79,
+      "rating": 4.7,
+      "reviews": 90,
+      "stock": 45,
+      "featured": false,
+      "size": "Medium",
+      "image": "/images/products/flat-white.jpg",
+      "description": "Smooth espresso with silky steamed milk."
+    },
+    {
+      "id": 8,
+      "name": "Chocolate Frappe",
+      "categoryId": 4,
+      "price": 6.49,
+      "rating": 4.9,
+      "reviews": 230,
+      "stock": 25,
+      "featured": true,
+      "size": "Large",
+      "image": "/images/products/chocolate-frappe.jpg",
+      "description": "Blended iced chocolate coffee topped with cream."
+    },
+    {
+      "id": 9,
+      "name": "Caramel Frappe",
+      "categoryId": 4,
+      "price": 6.29,
+      "rating": 4.8,
+      "reviews": 190,
+      "stock": 20,
+      "featured": true,
+      "size": "Large",
+      "image": "/images/products/caramel-frappe.jpg",
+      "description": "Creamy caramel blended iced coffee."
+    },
+    {
+      "id": 10,
+      "name": "Green Tea",
+      "categoryId": 5,
+      "price": 3.99,
+      "rating": 4.5,
+      "reviews": 60,
+      "stock": 70,
+      "featured": false,
+      "size": "Medium",
+      "image": "/images/products/green-tea.jpg",
+      "description": "Fresh and healthy green tea."
+    },
+    {
+      "id": 11,
+      "name": "Blueberry Muffin",
+      "categoryId": 6,
+      "price": 3.49,
+      "rating": 4.7,
+      "reviews": 110,
+      "stock": 25,
+      "featured": true,
+      "size": "1 Piece",
+      "image": "/images/products/muffin.jpg",
+      "description": "Freshly baked muffin filled with blueberries."
+    },
+    {
+      "id": 12,
+      "name": "Chocolate Croissant",
+      "categoryId": 6,
+      "price": 3.99,
+      "rating": 4.8,
+      "reviews": 130,
+      "stock": 30,
+      "featured": true,
+      "size": "1 Piece",
+      "image": "/images/products/croissant.jpg",
+      "description": "Buttery croissant with chocolate filling."
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Ali Khan",
+      "email": "ali@example.com",
+      "password": "123456",
+      "phone": "03001234567",
+      "role": "customer"
+    },
+    {
+      "name": "Ali Sher",
+      "email": "ali@gmail.com",
+      "password": "asdf1234",
+      "id": 2
+    },
+    {
+      "name": "user",
+      "email": "user@gmail.com",
+      "phone": "03095689850",
+      "password": "user123",
+      "id": 3
+    },
+    {
+      "name": "customer",
+      "email": "customer@gmail.com",
+      "phone": "03949688963",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "name": "user12",
+      "email": "user12@gmail.com",
+      "phone": "0394968896465",
+      "password": "asdf1234",
+      "id": 5
+    },
+    {
+      "name": "Ali Sher",
+      "email": "ali@gmail.com",
+      "phone": "03095689850",
+      "password": "asdf1234",
+      "id": 6
+    },
+    {
+      "name": "Ali Sher",
+      "email": "alisher@gmail.com",
+      "phone": "03949688963",
+      "password": "asdf1234",
+      "id": 7
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "total": 15.47,
+      "status": "Delivered",
+      "date": "2026-06-01",
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        },
+        {
+          "productId": 11,
+          "quantity": 3
+        }
+      ]
+    }
+  ]
+}
