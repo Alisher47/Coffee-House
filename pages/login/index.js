@@ -1,25 +1,8 @@
-// set the BASE_URL for mock API
-let BASE_URL = "http://localhost:3000";
-
-let users = []; // create empty array to store user's list
+import { getUsers } from "../../services/auth.service.js";
+import { validatorLogin } from "../../utils/validators.js";
 
 // get login button from HTML using DOM;
 let login = document.getElementById("login-btn");
-
-// get the user's list
-const getUsers = async () => {
-  try {
-    const response = await fetch(`${BASE_URL}/users`);
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    const data = await response.json();
-    users.push(...data);
-    console.log("Loaded users for sigin", users);
-  } catch (error) {
-    console.error("Error fetching users:", error);
-  }
-};
 
 // create a function for set the payload structure and sign in the user;
 const handleSignin = async (e) => {
@@ -28,8 +11,10 @@ const handleSignin = async (e) => {
     e.preventDefault();
 
     // get values from HTML form using DOM;
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("password").value.trim();
+
+    let users = await getUsers();
 
     // check in users array if the user email and password are same;
     let isAuthenticatedUser = users.some(
@@ -39,8 +24,13 @@ const handleSignin = async (e) => {
     );
     console.log("authenticated user", isAuthenticatedUser);
 
+    validatorLogin({email, password})
+
     if (isAuthenticatedUser == true) {
      // is user match with correct credentials then stores it into localStorage
+     localStorage.setItem('currentUser', JSON.stringify(isAuthenticatedUser));
+     alert("Login Successfully");
+     window.location.href = "../dashboard/index.html";
      
     } else {
       alert("Credentials Not Found");
@@ -54,4 +44,3 @@ login.addEventListener("click", (e) => {
   handleSignin(e);
 });
 
-getUsers();

@@ -248,6 +248,13 @@
       "email": "ali@gmail.com",
       "password": "asdf1234",
       "id": 9
+    },
+    {
+      "name": "Ali Sher",
+      "email": "alisher123@gmail.com",
+      "password": "asdf1234",
+      "confirmPassword": "asdf1234",
+      "id": 10
     }
   ],
   "cart": [],
