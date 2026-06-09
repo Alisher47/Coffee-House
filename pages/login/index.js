@@ -17,7 +17,7 @@ const handleSignin = async (e) => {
     let users = await getUsers();
 
     // check in users array if the user email and password are same;
-    let isAuthenticatedUser = users.some(
+    let isAuthenticatedUser = users.find(
       (user) =>
         user.email.toLowerCase() === email.toLowerCase() &&
         user.password === password,
@@ -26,7 +26,7 @@ const handleSignin = async (e) => {
 
     validatorLogin({email, password})
 
-    if (isAuthenticatedUser == true) {
+    if (isAuthenticatedUser) {
      // is user match with correct credentials then stores it into localStorage
      localStorage.setItem('currentUser', JSON.stringify(isAuthenticatedUser));
      alert("Login Successfully");

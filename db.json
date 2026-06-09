@@ -1,36 +1,42 @@
 {
-  "categories": [
-    {
-      "id": 1,
-      "name": "Hot Coffee",
-      "image": "/images/categories/hot-coffee.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Cold Coffee",
-      "image": "/images/categories/cold-coffee.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Espresso Drinks",
-      "image": "/images/categories/espresso.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Frappes",
-      "image": "/images/categories/frappe.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Tea",
-      "image": "/images/categories/tea.jpg"
-    },
-    {
-      "id": 6,
-      "name": "Bakery",
-      "image": "/images/categories/bakery.jpg"
-    }
-  ],
+ "categories": [
+  {
+    "id": 1,
+    "name": "Hot Coffee",
+    "image": "../../assets/images/mayumi-maciel-L-qrDZ85eZ8-unsplash.jpg",
+    "description": "Freshly brewed classic hot coffees to warm your soul"
+  },
+  {
+    "id": 2,
+    "name": "Cold Coffee",
+    "image": "../../assets/images/eiliv-aceron-44d0W8JhoPc-unsplash.jpg",
+    "description": "Blended iced chocolate coffee topped with cream."
+  },
+  {
+    "id": 3,
+    "name": "Espresso Drinks",
+    "image": "../../assets/images/jeremy-yap-jn-HaGWe4yw-unsplash.jpg",
+    "description": "Rich espresso topped with steamed milk and creamy foam."
+  },
+  {
+    "id": 4,
+    "name": "Frappes",
+    "image": "../../assets/images/olena-bohovyk-d0DKYP2ch58-unsplash.jpg",
+    "description": "Blended, creamy ice coffees topped with whipped cream."
+  },
+  {
+    "id": 5,
+    "name": "Tea",
+    "image": "../../assets/images/nathan-dumlao-8yBQQqH3q8Q-unsplash.jpg",
+    "description": "Calming herbal, green, and traditional black tea selections."
+  },
+  {
+    "id": 6,
+    "name": "Bakery",
+    "image": "https://unsplash.com",
+    "description": "Oven-fresh pastries, muffins, and treats to pair with your drink."
+  }
+],
   "products": [
     {
       "id": 1,
@@ -257,6 +263,74 @@
       "id": 10
     }
   ],
+  "reviews": [
+  {
+    "id": 1,
+    "customerName": "Sarah Johnson",
+    "customerImage": "👩",
+    "rating": 5,
+    "review": "Absolutely love Coffee House! The caramel macchiato is the best I've ever had. The ambiance is so cozy and the staff is incredibly friendly. My go-to coffee spot every morning!",
+    "date": "2024-05-15",
+    "productId": 2,
+    "category": "Hot Coffee",
+    "verified": true
+  },
+  {
+    "id": 2,
+    "customerName": "Michael Chen",
+    "customerImage": "👨",
+    "rating": 5,
+    "review": "Fast delivery and amazing quality. The cold brew is perfectly smooth and refreshing. Their pastries are also fresh and delicious. Highly recommended!",
+    "date": "2024-05-20",
+    "productId": 5,
+    "category": "Cold Coffee",
+    "verified": true
+  },
+  {
+    "id": 3,
+    "customerName": "Emma Rodriguez",
+    "customerImage": "👩",
+    "rating": 4,
+    "review": "Great coffee and wonderful service. The Matcha Latte is perfect - not too sweet, just right. Only gave 4 stars because the seating area can get crowded during peak hours.",
+    "date": "2024-05-18",
+    "productId": 10,
+    "category": "Tea",
+    "verified": true
+  },
+  {
+    "id": 4,
+    "customerName": "David Wilson",
+    "customerImage": "🧑",
+    "rating": 5,
+    "review": "Best espresso in town! The crema is perfect and the beans are clearly high quality. I've been coming here for 3 years and never been disappointed.",
+    "date": "2024-05-22",
+    "productId": 6,
+    "category": "Espresso Drinks",
+    "verified": true
+  },
+  {
+    "id": 5,
+    "customerName": "Lisa Thompson",
+    "customerImage": "👩",
+    "rating": 5,
+    "review": "The Chocolate Frappe is heavenly! Perfect for hot summer days. The staff is always welcoming and remembers my usual order. Love this place!",
+    "date": "2024-05-25",
+    "productId": 8,
+    "category": "Frappes",
+    "verified": true
+  },
+  {
+    "id": 6,
+    "customerName": "James Martinez",
+    "customerImage": "👨",
+    "rating": 4,
+    "review": "Solid coffee shop with consistent quality. Their blueberry muffins are amazing - warm, soft, and full of berries. Would be 5 stars if they had more seating.",
+    "date": "2024-05-10",
+    "productId": 11,
+    "category": "Bakery",
+    "verified": true
+  }
+],
   "cart": [],
   "orders": [
     {
