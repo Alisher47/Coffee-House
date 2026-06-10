@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House - All Coffees</title>
+    <link rel="stylesheet" href="../../assets/css/all-coffees/index.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">☕</span>
+                <span class="logo-text">Coffee House</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../dashboard/index.html" class="nav-link">Home</a></li>
+                <li><a href="../all-coffees/index.html" class="nav-link active">All Coffees</a></li>
+                <li><a href="../about-us/index.html" class="nav-link">About</a></li>
+                <li><a href="../contact/index.html" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Order Your <span class="highlight">Favorite Coffee</span> Now</h1>
+                <p class="hero-subtitle">Discover our handcrafted selection of premium coffees made with love</p>
+                <div class="hero-decoration">
+                    <span>☕</span>
+                    <span>🫘</span>
+                    <span>✨</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="section-container">
+            <div class="filter-wrapper">
+                <div class="filter-header">
+                    <h3>Filter by Category</h3>
+                    <button class="reset-filter" id="resetFilter">Reset All</button>
+                </div>
+                <div class="filter-buttons" id="filterButtons">
+                    <button class="filter-btn active" data-category="all">All Coffees</button>
+                    <button class="filter-btn" data-category="Hot Coffee">Hot Coffee</button>
+                    <button class="filter-btn" data-category="Cold Coffee">Cold Coffee</button>
+                    <button class="filter-btn" data-category="Espresso Drinks">Espresso Drinks</button>
+                    <button class="filter-btn" data-category="Frappes">Frappes</button>
+                    <button class="filter-btn" data-category="Tea">Tea</button>
+                    <button class="filter-btn" data-category="Bakery">Bakery</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="products-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Our Premium Collection</h2>
+                <p>Freshly brewed, ethically sourced, expertly crafted</p>
+                <div class="header-decoration">
+                    <span>⭐</span>
+                    <span>☕</span>
+                    <span>⭐</span>
+                </div>
+            </div>
+            <div id="products-container" class="products-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <span class="logo-icon">☕</span>
+                    <span class="logo-text">Coffee House</span>
+                </div>
+                <p class="footer-description">Serving happiness one cup at a time. Premium coffee experience since 2010.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">🎵</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="/dashboard.html">Home</a></li>
+                    <li><a href="/all-coffees.html">All Coffees</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Coffee Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Espresso Based</a></li>
+                    <li><a href="#">Brewed Coffee</a></li>
+                    <li><a href="#">Cold Brews</a></li>
+                    <li><a href="#">Specialty Drinks</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <ul class="footer-links contact-info">
+                    <li>📍 123 Coffee Street, Downtown</li>
+                    <li>📞 +1 (555) 123-4567</li>
+                    <li>✉️ hello@coffeehouse.com</li>
+                    <li>🕐 Mon-Sun: 7am - 10pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2024 Coffee House. All rights reserved. ☕ Freshly brewed with passion.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Returns & Refunds</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="all-coffees.js"></script>
+</body>
+</html>
