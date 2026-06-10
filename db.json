@@ -51,10 +51,10 @@
       "price": 4.99,
       "rating": 4.8,
       "reviews": 120,
-      "stock": 50,
+      "in_stock": 50,
       "featured": true,
       "size": "Medium",
-      "image": "/images/products/cappuccino.jpg",
+      "image": "../../assets/images/yash18-ixG8TbluXpM-unsplash.jpg",
       "description": "Rich espresso topped with steamed milk and creamy foam."
     },
     {
@@ -64,10 +64,10 @@
       "price": 5.49,
       "rating": 4.7,
       "reviews": 98,
-      "stock": 40,
+      "in_stock": 40,
       "featured": true,
       "size": "Large",
-      "image": "/images/products/caramel-latte.jpg",
+      "image": "../../assets/images/keith-brian-de-leon-1EV6hDgDpFM-unsplash.jpg",
       "description": "Smooth espresso blended with caramel syrup and milk."
     },
     {
@@ -77,10 +77,10 @@
       "price": 5.99,
       "rating": 4.9,
       "reviews": 210,
-      "stock": 30,
+      "in_stock": 30,
       "featured": true,
       "size": "Large",
-      "image": "/images/products/mocha.jpg",
+      "image": "../../assets/images/shayna-douglas-e-8xxuZfSMw-unsplash.jpg",
       "description": "Chocolate flavored coffee with whipped cream."
     },
     {
@@ -90,10 +90,10 @@
       "price": 4.49,
       "rating": 4.6,
       "reviews": 75,
-      "stock": 60,
+      "in_stock": 60,
       "featured": false,
       "size": "Medium",
-      "image": "/images/products/iced-americano.jpg",
+      "image": "../../assets/images/andrew-valdivia-mMI5sdLFoHM-unsplash.jpg",
       "description": "Refreshing cold espresso served over ice."
     },
     {
@@ -103,10 +103,10 @@
       "price": 5.29,
       "rating": 4.8,
       "reviews": 150,
-      "stock": 35,
+      "in_stock": 35,
       "featured": true,
       "size": "Large",
-      "image": "/images/products/cold-brew.jpg",
+      "image": "../../assets/images/mayur-QxfXv6v22lA-unsplash.jpg",
       "description": "Slow-steeped coffee infused with vanilla flavor."
     },
     {
@@ -116,10 +116,10 @@
       "price": 2.99,
       "rating": 4.9,
       "reviews": 180,
-      "stock": 80,
+      "in_stock": 80,
       "featured": false,
       "size": "Single",
-      "image": "/images/products/espresso.jpg",
+      "image": "../../assets/images/joe-hepburn-EcWFOYOpkpY-unsplash.jpg",
       "description": "Pure concentrated coffee shot."
     },
     {
@@ -129,10 +129,10 @@
       "price": 4.79,
       "rating": 4.7,
       "reviews": 90,
-      "stock": 45,
+      "in_stock": 45,
       "featured": false,
       "size": "Medium",
-      "image": "/images/products/flat-white.jpg",
+      "image": "../../assets/images/flatwhite-coffee.jpg",
       "description": "Smooth espresso with silky steamed milk."
     },
     {
@@ -142,10 +142,10 @@
       "price": 6.49,
       "rating": 4.9,
       "reviews": 230,
-      "stock": 25,
+      "in_stock": 25,
       "featured": true,
       "size": "Large",
-      "image": "/images/products/chocolate-frappe.jpg",
+      "image": "../../assets/images/chocolate-frappe.jpg",
       "description": "Blended iced chocolate coffee topped with cream."
     },
     {
@@ -155,10 +155,10 @@
       "price": 6.29,
       "rating": 4.8,
       "reviews": 190,
-      "stock": 20,
+      "in_stock": 20,
       "featured": true,
       "size": "Large",
-      "image": "/images/products/caramel-frappe.jpg",
+      "image": "../../assets/images/olena-bohovyk-d0DKYP2ch58-unsplash.jpg",
       "description": "Creamy caramel blended iced coffee."
     },
     {
@@ -168,10 +168,10 @@
       "price": 3.99,
       "rating": 4.5,
       "reviews": 60,
-      "stock": 70,
+      "in_stock": 70,
       "featured": false,
       "size": "Medium",
-      "image": "/images/products/green-tea.jpg",
+      "image": "../../assets/images/green-tea.jpg",
       "description": "Fresh and healthy green tea."
     },
     {
@@ -181,10 +181,10 @@
       "price": 3.49,
       "rating": 4.7,
       "reviews": 110,
-      "stock": 25,
+      "in_stock": 25,
       "featured": true,
       "size": "1 Piece",
-      "image": "/images/products/muffin.jpg",
+      "image": "../../assets/images/blueberry-muffin.jpg",
       "description": "Freshly baked muffin filled with blueberries."
     },
     {
@@ -194,10 +194,10 @@
       "price": 3.99,
       "rating": 4.8,
       "reviews": 130,
-      "stock": 30,
+      "in_stock": 30,
       "featured": true,
       "size": "1 Piece",
-      "image": "/images/products/croissant.jpg",
+      "image": "../../assets/images/Chocolate Croissant.jpg",
       "description": "Buttery croissant with chocolate filling."
     }
   ],

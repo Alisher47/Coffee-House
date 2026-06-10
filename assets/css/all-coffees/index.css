@@ -714,3 +714,28 @@ body {
         font-size: 1.2rem;
     }
 }
+
+/* Order Button CSS */
+.order-button {
+    background: linear-gradient(135deg, #6f4e37, #4e342e);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.order-button:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(78, 52, 46, 0.3);
+}
+
+.order-button:active {
+    transform: translateX(2px);
+}
