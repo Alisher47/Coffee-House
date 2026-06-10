@@ -4,37 +4,43 @@
     "id": 1,
     "name": "Hot Coffee",
     "image": "../../assets/images/mayumi-maciel-L-qrDZ85eZ8-unsplash.jpg",
-    "description": "Freshly brewed classic hot coffees to warm your soul"
+    "description": "Freshly brewed classic hot coffees to warm your soul",
+    "itemCount": "3"
   },
   {
     "id": 2,
     "name": "Cold Coffee",
     "image": "../../assets/images/eiliv-aceron-44d0W8JhoPc-unsplash.jpg",
-    "description": "Blended iced chocolate coffee topped with cream."
+    "description": "Blended iced chocolate coffee topped with cream.",
+    "itemCount": "2"
   },
   {
     "id": 3,
     "name": "Espresso Drinks",
     "image": "../../assets/images/jeremy-yap-jn-HaGWe4yw-unsplash.jpg",
-    "description": "Rich espresso topped with steamed milk and creamy foam."
+    "description": "Rich espresso topped with steamed milk and creamy foam.",
+    "itemCount": "2"
   },
   {
     "id": 4,
     "name": "Frappes",
     "image": "../../assets/images/olena-bohovyk-d0DKYP2ch58-unsplash.jpg",
-    "description": "Blended, creamy ice coffees topped with whipped cream."
+    "description": "Blended, creamy ice coffees topped with whipped cream.",
+    "itemCount": "2"
   },
   {
     "id": 5,
     "name": "Tea",
     "image": "../../assets/images/nathan-dumlao-8yBQQqH3q8Q-unsplash.jpg",
-    "description": "Calming herbal, green, and traditional black tea selections."
+    "description": "Calming herbal, green, and traditional black tea selections.",
+    "itemCount": "1"
   },
   {
     "id": 6,
     "name": "Bakery",
-    "image": "https://unsplash.com",
-    "description": "Oven-fresh pastries, muffins, and treats to pair with your drink."
+    "image": "../../assets/images/aurela-redenica-LgwVB6VniWI-unsplash.jpg",
+    "description": "Oven-fresh pastries, muffins, and treats to pair with your drink.",
+    "itemCount": "2"
   }
 ],
   "products": [

@@ -36,7 +36,7 @@ const handleSignin = async (e) => {
       alert("Credentials Not Found");
     }
   } catch (error) {
-    alert(`Errorsss ${error}`);
+    alert(`Errors ${error}`);
   }
 };
 
