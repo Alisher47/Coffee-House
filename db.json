@@ -1,54 +1,54 @@
 {
- "categories": [
-  {
-    "id": 1,
-    "name": "Hot Coffee",
-    "image": "../../assets/images/mayumi-maciel-L-qrDZ85eZ8-unsplash.jpg",
-    "description": "Freshly brewed classic hot coffees to warm your soul",
-    "itemCount": "3"
-  },
-  {
-    "id": 2,
-    "name": "Cold Coffee",
-    "image": "../../assets/images/eiliv-aceron-44d0W8JhoPc-unsplash.jpg",
-    "description": "Blended iced chocolate coffee topped with cream.",
-    "itemCount": "2"
-  },
-  {
-    "id": 3,
-    "name": "Espresso Drinks",
-    "image": "../../assets/images/jeremy-yap-jn-HaGWe4yw-unsplash.jpg",
-    "description": "Rich espresso topped with steamed milk and creamy foam.",
-    "itemCount": "2"
-  },
-  {
-    "id": 4,
-    "name": "Frappes",
-    "image": "../../assets/images/olena-bohovyk-d0DKYP2ch58-unsplash.jpg",
-    "description": "Blended, creamy ice coffees topped with whipped cream.",
-    "itemCount": "2"
-  },
-  {
-    "id": 5,
-    "name": "Tea",
-    "image": "../../assets/images/nathan-dumlao-8yBQQqH3q8Q-unsplash.jpg",
-    "description": "Calming herbal, green, and traditional black tea selections.",
-    "itemCount": "1"
-  },
-  {
-    "id": 6,
-    "name": "Bakery",
-    "image": "../../assets/images/aurela-redenica-LgwVB6VniWI-unsplash.jpg",
-    "description": "Oven-fresh pastries, muffins, and treats to pair with your drink.",
-    "itemCount": "2"
-  }
-],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Hot Coffee",
+      "image": "../../assets/images/mayumi-maciel-L-qrDZ85eZ8-unsplash.jpg",
+      "description": "Freshly brewed classic hot coffees to warm your soul",
+      "itemCount": "3"
+    },
+    {
+      "id": 2,
+      "name": "Cold Coffee",
+      "image": "../../assets/images/eiliv-aceron-44d0W8JhoPc-unsplash.jpg",
+      "description": "Blended iced chocolate coffee topped with cream.",
+      "itemCount": "2"
+    },
+    {
+      "id": 3,
+      "name": "Espresso Drinks",
+      "image": "../../assets/images/jeremy-yap-jn-HaGWe4yw-unsplash.jpg",
+      "description": "Rich espresso topped with steamed milk and creamy foam.",
+      "itemCount": "2"
+    },
+    {
+      "id": 4,
+      "name": "Frappes",
+      "image": "../../assets/images/olena-bohovyk-d0DKYP2ch58-unsplash.jpg",
+      "description": "Blended, creamy ice coffees topped with whipped cream.",
+      "itemCount": "2"
+    },
+    {
+      "id": 5,
+      "name": "Tea",
+      "image": "../../assets/images/nathan-dumlao-8yBQQqH3q8Q-unsplash.jpg",
+      "description": "Calming herbal, green, and traditional black tea selections.",
+      "itemCount": "1"
+    },
+    {
+      "id": 6,
+      "name": "Bakery",
+      "image": "../../assets/images/aurela-redenica-LgwVB6VniWI-unsplash.jpg",
+      "description": "Oven-fresh pastries, muffins, and treats to pair with your drink.",
+      "itemCount": "2"
+    }
+  ],
   "products": [
     {
       "id": 1,
       "name": "Classic Cappuccino",
       "categoryId": 1,
-      "category":"Hot Coffee",
+      "category": "Hot Coffee",
       "price": 4.99,
       "rating": 4.8,
       "reviews": 120,
@@ -62,7 +62,7 @@
       "id": 2,
       "name": "Caramel Latte",
       "categoryId": 1,
-      "category":"Hot Coffee",
+      "category": "Hot Coffee",
       "price": 5.49,
       "rating": 4.7,
       "reviews": 98,
@@ -76,7 +76,7 @@
       "id": 3,
       "name": "Mocha Coffee",
       "categoryId": 1,
-      "category":"Hot Coffee",
+      "category": "Hot Coffee",
       "price": 5.99,
       "rating": 4.9,
       "reviews": 210,
@@ -90,7 +90,7 @@
       "id": 4,
       "name": "Iced Americano",
       "categoryId": 2,
-      "category":"Cold Coffee",
+      "category": "Cold Coffee",
       "price": 4.49,
       "rating": 4.6,
       "reviews": 75,
@@ -104,7 +104,7 @@
       "id": 5,
       "name": "Vanilla Cold Brew",
       "categoryId": 2,
-      "category":"Cold Coffee",
+      "category": "Cold Coffee",
       "price": 5.29,
       "rating": 4.8,
       "reviews": 150,
@@ -118,7 +118,7 @@
       "id": 6,
       "name": "Espresso Shot",
       "categoryId": 3,
-      "category":"Espresso Drinks",
+      "category": "Espresso Drinks",
       "price": 2.99,
       "rating": 4.9,
       "reviews": 180,
@@ -132,7 +132,7 @@
       "id": 7,
       "name": "Flat White",
       "categoryId": 3,
-      "category":"Espresso Drinks",
+      "category": "Espresso Drinks",
       "price": 4.79,
       "rating": 4.7,
       "reviews": 90,
@@ -146,7 +146,7 @@
       "id": 8,
       "name": "Chocolate Frappe",
       "categoryId": 4,
-      "category":"Frappes",
+      "category": "Frappes",
       "price": 6.49,
       "rating": 4.9,
       "reviews": 230,
@@ -174,7 +174,7 @@
       "id": 10,
       "name": "Green Tea",
       "categoryId": 5,
-      "category":"Tea",
+      "category": "Tea",
       "price": 3.99,
       "rating": 4.5,
       "reviews": 60,
@@ -188,7 +188,7 @@
       "id": 11,
       "name": "Blueberry Muffin",
       "categoryId": 6,
-      "category":"Bakery",
+      "category": "Bakery",
       "price": 3.49,
       "rating": 4.7,
       "reviews": 110,
@@ -202,7 +202,7 @@
       "id": 12,
       "name": "Chocolate Croissant",
       "categoryId": 6,
-      "category":"Bakery",
+      "category": "Bakery",
       "price": 3.99,
       "rating": 4.8,
       "reviews": 130,
@@ -212,11 +212,11 @@
       "image": "../../assets/images/Chocolate Croissant.jpg",
       "description": "Buttery croissant with chocolate filling."
     },
-        {
+    {
       "id": 13,
       "name": "Espresso Buttercream Cake",
       "categoryId": 6,
-      "category":"Bakery",
+      "category": "Bakery",
       "price": 4.99,
       "rating": 4.8,
       "reviews": 130,
@@ -296,74 +296,117 @@
     }
   ],
   "reviews": [
-  {
-    "id": 1,
-    "customerName": "Sarah Johnson",
-    "customerImage": "👩",
-    "rating": 5,
-    "review": "Absolutely love Coffee House! The caramel macchiato is the best I've ever had. The ambiance is so cozy and the staff is incredibly friendly. My go-to coffee spot every morning!",
-    "date": "2024-05-15",
-    "productId": 2,
-    "category": "Hot Coffee",
-    "verified": true
-  },
-  {
-    "id": 2,
-    "customerName": "Michael Chen",
-    "customerImage": "👨",
-    "rating": 5,
-    "review": "Fast delivery and amazing quality. The cold brew is perfectly smooth and refreshing. Their pastries are also fresh and delicious. Highly recommended!",
-    "date": "2024-05-20",
-    "productId": 5,
-    "category": "Cold Coffee",
-    "verified": true
-  },
-  {
-    "id": 3,
-    "customerName": "Emma Rodriguez",
-    "customerImage": "👩",
-    "rating": 4,
-    "review": "Great coffee and wonderful service. The Matcha Latte is perfect - not too sweet, just right. Only gave 4 stars because the seating area can get crowded during peak hours.",
-    "date": "2024-05-18",
-    "productId": 10,
-    "category": "Tea",
-    "verified": true
-  },
-  {
-    "id": 4,
-    "customerName": "David Wilson",
-    "customerImage": "🧑",
-    "rating": 5,
-    "review": "Best espresso in town! The crema is perfect and the beans are clearly high quality. I've been coming here for 3 years and never been disappointed.",
-    "date": "2024-05-22",
-    "productId": 6,
-    "category": "Espresso Drinks",
-    "verified": true
-  },
-  {
-    "id": 5,
-    "customerName": "Lisa Thompson",
-    "customerImage": "👩",
-    "rating": 5,
-    "review": "The Chocolate Frappe is heavenly! Perfect for hot summer days. The staff is always welcoming and remembers my usual order. Love this place!",
-    "date": "2024-05-25",
-    "productId": 8,
-    "category": "Frappes",
-    "verified": true
-  },
-  {
-    "id": 6,
-    "customerName": "James Martinez",
-    "customerImage": "👨",
-    "rating": 4,
-    "review": "Solid coffee shop with consistent quality. Their blueberry muffins are amazing - warm, soft, and full of berries. Would be 5 stars if they had more seating.",
-    "date": "2024-05-10",
-    "productId": 11,
-    "category": "Bakery",
-    "verified": true
-  }
-],
-  "cart": [],
+    {
+      "id": 1,
+      "customerName": "Sarah Johnson",
+      "customerImage": "👩",
+      "rating": 5,
+      "review": "Absolutely love Coffee House! The caramel macchiato is the best I've ever had. The ambiance is so cozy and the staff is incredibly friendly. My go-to coffee spot every morning!",
+      "date": "2024-05-15",
+      "productId": 2,
+      "category": "Hot Coffee",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "customerName": "Michael Chen",
+      "customerImage": "👨",
+      "rating": 5,
+      "review": "Fast delivery and amazing quality. The cold brew is perfectly smooth and refreshing. Their pastries are also fresh and delicious. Highly recommended!",
+      "date": "2024-05-20",
+      "productId": 5,
+      "category": "Cold Coffee",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "customerName": "Emma Rodriguez",
+      "customerImage": "👩",
+      "rating": 4,
+      "review": "Great coffee and wonderful service. The Matcha Latte is perfect - not too sweet, just right. Only gave 4 stars because the seating area can get crowded during peak hours.",
+      "date": "2024-05-18",
+      "productId": 10,
+      "category": "Tea",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "customerName": "David Wilson",
+      "customerImage": "🧑",
+      "rating": 5,
+      "review": "Best espresso in town! The crema is perfect and the beans are clearly high quality. I've been coming here for 3 years and never been disappointed.",
+      "date": "2024-05-22",
+      "productId": 6,
+      "category": "Espresso Drinks",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "customerName": "Lisa Thompson",
+      "customerImage": "👩",
+      "rating": 5,
+      "review": "The Chocolate Frappe is heavenly! Perfect for hot summer days. The staff is always welcoming and remembers my usual order. Love this place!",
+      "date": "2024-05-25",
+      "productId": 8,
+      "category": "Frappes",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "customerName": "James Martinez",
+      "customerImage": "👨",
+      "rating": 4,
+      "review": "Solid coffee shop with consistent quality. Their blueberry muffins are amazing - warm, soft, and full of berries. Would be 5 stars if they had more seating.",
+      "date": "2024-05-10",
+      "productId": 11,
+      "category": "Bakery",
+      "verified": true
+    }
+  ],
+  "cart": [
+    {
+      "id": 2,
+      "name": "Caramel Latte",
+      "categoryId": 1,
+      "category": "Hot Coffee",
+      "price": 5.49,
+      "rating": 4.7,
+      "reviews": 98,
+      "in_stock": 40,
+      "featured": true,
+      "size": "Large",
+      "image": "../../assets/images/keith-brian-de-leon-1EV6hDgDpFM-unsplash.jpg",
+      "description": "Smooth espresso blended with caramel syrup and milk."
+    },
+    {
+      "id": 13,
+      "name": "Espresso Buttercream Cake",
+      "categoryId": 6,
+      "category": "Bakery",
+      "price": 4.99,
+      "rating": 4.8,
+      "reviews": 130,
+      "in_stock": 30,
+      "featured": true,
+      "size": "per pound",
+      "image": "../../assets/images/chocolate layer cake with coffee buttercream.JPG",
+      "description": "Moist sponge layers soaked with dark espresso syrup and frosted with a rich, dark-roasted coffee buttercream"
+    },
+    {
+      "id": 5,
+      "name": "Vanilla Cold Brew",
+      "categoryId": 2,
+      "category": "Cold Coffee",
+      "price": 5.29,
+      "rating": 4.8,
+      "reviews": 150,
+      "in_stock": 35,
+      "featured": true,
+      "size": "Large",
+      "image": "../../assets/images/mayur-QxfXv6v22lA-unsplash.jpg",
+      "description": "Slow-steeped coffee infused with vanilla flavor."
+    }
+  ],
   "orders": [
     {
       "id": 1,

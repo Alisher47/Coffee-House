@@ -1,4 +1,4 @@
-import { getCoffees } from "../../services/coffee.service.js";
+import { addToCart, getCart, getCoffees } from "../../services/coffee.service.js";
 import { getCategories } from "../../services/dashboard.service.js";
 
 // get filtered buttons;
@@ -6,11 +6,17 @@ const filterButton = document.querySelectorAll(".filter-buttons .filter-btn");
 // get reset button;
 const resetButton = document.getElementById("resetFilter");
 
+let coffeeList = [];
+let cart = [];
+
 // create a function in which fetch the coffee's list and set in function;
 export const fetchCoffees = async () => {
   try {
     let coffees = await getCoffees();
+    let cartItem = await getCart();
     displayCoffees(coffees);
+    coffeeList = coffees;
+    cart = cartItem;
   } catch (error) {
     throw error;
   }
@@ -121,15 +127,36 @@ filterButton.forEach((button) => {
   });
 });
 
-resetButton.addEventListener("click", async () => {
+const handleCart = async (coffee) => {
+ try {
+  // set the POST API call;
+  let result = await addToCart(coffee);
+  if(result){
+    let item_count = document.querySelector("cart-count");
+    item_count.innerHTML = cart.length;
+  }
+ } catch (error) {
+  throw error;
+ }
+}
 
+const productsContainer = document.getElementById("products-container");
+
+productsContainer.addEventListener("click", async (e) => {
+  if (e.target.classList.contains("order-button")) {
+    const coffeeId = e.target.dataset.id;
+    let selectedItem = coffeeList.find((item) => item.id == coffeeId);
+   let result = await handleCart(selectedItem);
+   console.log('resultttt', result);
+  }
+});
+
+resetButton.addEventListener("click", async () => {
   filterButton.forEach((btn) => {
     btn.classList.remove("active");
   });
 
-  document
-    .querySelector('[data-category="all"]')
-    ?.classList.add("active");
+  document.querySelector('[data-category="all"]')?.classList.add("active");
 
   fetchCoffees();
 });
