@@ -211,6 +211,20 @@
       "size": "1 Piece",
       "image": "../../assets/images/Chocolate Croissant.jpg",
       "description": "Buttery croissant with chocolate filling."
+    },
+        {
+      "id": 13,
+      "name": "Espresso Buttercream Cake",
+      "categoryId": 6,
+      "category":"Bakery",
+      "price": 4.99,
+      "rating": 4.8,
+      "reviews": 130,
+      "in_stock": 30,
+      "featured": true,
+      "size": "per pound",
+      "image": "../../assets/images/chocolate layer cake with coffee buttercream.JPG",
+      "description": "Moist sponge layers soaked with dark espresso syrup and frosted with a rich, dark-roasted coffee buttercream"
     }
   ],
   "users": [

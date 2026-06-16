@@ -27,8 +27,9 @@ body {
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Changed from space-between to flex-start - items align left */
     align-items: center;
+    gap: 3rem; /* Adds spacing between logo and nav menu */
 }
 
 .logo {
@@ -37,6 +38,7 @@ body {
     gap: 0.5rem;
     font-size: 1.5rem;
     font-weight: 700;
+    flex-shrink: 0; /* Prevents logo from shrinking */
 }
 
 .logo-icon {
@@ -60,6 +62,8 @@ body {
     display: flex;
     gap: 2rem;
     list-style: none;
+    margin-left: 0;
+    flex-shrink: 0; /* Prevents nav menu from shrinking */
 }
 
 .nav-link {
@@ -96,6 +100,7 @@ body {
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    margin-left: auto; /* Pushes toggle button to the right on mobile */
 }
 
 .nav-toggle span {
@@ -106,6 +111,36 @@ body {
     transition: 0.3s;
 }
 
+/* Responsive adjustments - keep left alignment on mobile when menu is closed */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between; /* For mobile, we need space-between to show toggle on right */
+        gap: 0;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: rgba(62, 39, 35, 0.98);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 2rem 0;
+        gap: 1.5rem;
+        flex-shrink: 1;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-toggle {
+        display: flex;
+        margin-left: auto;
+    }
+}
 /* Contact Hero Section */
 .contact-hero {
     background: linear-gradient(135deg, #fdfaf7 0%, #f5e6d3 100%);
