@@ -28,3 +28,22 @@ export const post = async (endpoint, payload) => {
 
   return await response.json();
 };
+
+export const remove = async (endpoint) => {
+  const response = await fetch(
+    `${BASE_URL}/${endpoint}`,
+    {
+      method: "DELETE",
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(`HTTP Error: ${response.status}`);
+  }
+
+  if (response.status === 204) {
+    return null;
+  }
+
+  return await response.json();
+};

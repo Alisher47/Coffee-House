@@ -150,7 +150,7 @@ productsContainer.addEventListener("click", async (e) => {
     const coffeeId = e.target.dataset.id;
     let selectedItem = coffeeList.find((item) => item.id == coffeeId);
     let result = await handleCart(selectedItem);
-    console.log("resultttt", result);
+
   }
 });
 
