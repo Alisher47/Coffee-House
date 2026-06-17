@@ -1,4 +1,8 @@
-import { addToCart, getCart, getCoffees } from "../../services/coffee.service.js";
+import {
+  addToCart,
+  getCart,
+  getCoffees,
+} from "../../services/coffee.service.js";
 import { getCategories } from "../../services/dashboard.service.js";
 
 // get filtered buttons;
@@ -8,6 +12,7 @@ const resetButton = document.getElementById("resetFilter");
 
 let coffeeList = [];
 let cart = [];
+let cartCount = document.querySelector(".cart-count");
 
 // create a function in which fetch the coffee's list and set in function;
 export const fetchCoffees = async () => {
@@ -17,6 +22,8 @@ export const fetchCoffees = async () => {
     displayCoffees(coffees);
     coffeeList = coffees;
     cart = cartItem;
+    cartCount.innerHTML = cart.length;
+    console.log(cart.length);
   } catch (error) {
     throw error;
   }
@@ -128,17 +135,13 @@ filterButton.forEach((button) => {
 });
 
 const handleCart = async (coffee) => {
- try {
-  // set the POST API call;
-  let result = await addToCart(coffee);
-  if(result){
-    let item_count = document.querySelector("cart-count");
-    item_count.innerHTML = cart.length;
+  try {
+    // set the POST API call;
+    let result = await addToCart(coffee);
+  } catch (error) {
+    throw error;
   }
- } catch (error) {
-  throw error;
- }
-}
+};
 
 const productsContainer = document.getElementById("products-container");
 
@@ -146,8 +149,8 @@ productsContainer.addEventListener("click", async (e) => {
   if (e.target.classList.contains("order-button")) {
     const coffeeId = e.target.dataset.id;
     let selectedItem = coffeeList.find((item) => item.id == coffeeId);
-   let result = await handleCart(selectedItem);
-   console.log('resultttt', result);
+    let result = await handleCart(selectedItem);
+    console.log("resultttt", result);
   }
 });
 
@@ -160,5 +163,11 @@ resetButton.addEventListener("click", async () => {
 
   fetchCoffees();
 });
+
+// Navigate on cart page;
+let cartPage = document.querySelector(".cart-icon");
+cartPage.addEventListener('click', () => {
+   window.location.href = "/pages/cart/index.html";
+})
 
 fetchCoffees();

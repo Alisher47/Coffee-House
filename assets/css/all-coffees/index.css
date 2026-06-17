@@ -27,9 +27,8 @@ body {
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: flex-start; /* Changed from space-between to flex-start - items align left */
+    justify-content: space-between;
     align-items: center;
-    gap: 3rem; /* Adds spacing between logo and nav menu */
 }
 
 .logo {
@@ -143,43 +142,36 @@ body {
 }
 
 /* Cart Icon Styles */
+.nav-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.cart-icon:hover {
+    transform: scale(1.1);
+}
+
 .cart-icon {
     position: relative;
+    font-size: 1.5rem;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-    background: linear-gradient(135deg, #6f4e37, #4e342e);
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    margin-left: auto; /* Pushes cart to the right side */
+    transition: transform 0.3s;
 }
 
 .cart-icon:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(78, 52, 46, 0.4);
-    background: linear-gradient(135deg, #7a5a48, #5e3d2e);
-}
-
-.cart-symbol {
-    font-size: 1.4rem;
-    color: #f5e6d3;
+    transform: scale(1.1);
 }
 
 .cart-count {
-    background: #f5c542;
-    color: #4e342e;
-    font-size: 0.75rem;
-    font-weight: 700;
-    min-width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 5px;
-    animation: pulse 2s infinite;
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background: #bf7f46;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    font-weight: bold;
 }
 
 @keyframes pulse {

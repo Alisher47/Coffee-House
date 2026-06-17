@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House - Your Cart</title>
+    <link rel="stylesheet" href="../../assets/css/cart/index.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">☕</span>
+                <span class="logo-text">Coffee House</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/pages/dashboard/index.html" class="nav-link">Home</a></li>
+                <li><a href="/pages/all-coffees/index.html" class="nav-link">All Coffees</a></li>
+                <li><a href="/pages/about-us/index.html" class="nav-link">About</a></li>
+                <li><a href="/pages/contact/index.html" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="cart-icon">
+                    <span>🛒</span>
+                    <span class="cart-count">3</span>
+                </div>
+                <div class="user-avatar">
+                    <span>👤</span>
+                </div>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Hero Section -->
+    <section class="cart-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Your <span class="highlight">Shopping Cart</span></h1>
+                <p class="hero-subtitle">Review your items and proceed to checkout</p>
+                <div class="hero-decoration">
+                    <span>🛒</span>
+                    <span>☕</span>
+                    <span>✨</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Content Section -->
+    <section class="cart-section">
+        <div class="section-container">
+            <div class="cart-layout">
+                <!-- Cart Items Container -->
+                <div class="cart-items-wrapper">
+                    <div class="cart-header">
+                        <h2>Your Items</h2>
+                        <span class="item-count" id="itemCount">3 items</span>
+                    </div>
+                    <div id="cart-items-container" class="cart-items-grid">
+                        <!-- Cart items will be dynamically loaded here -->
+                    </div>
+                </div>
+
+                <!-- Cart Summary Sidebar -->
+                <div class="cart-summary-wrapper">
+                    <div class="cart-summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Delivery Fee</span>
+                            <span id="deliveryFee">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax (8%)</span>
+                            <span id="tax">$0.00</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <span id="total">$0.00</span>
+                        </div>
+                        <button class="checkout-btn" id="checkoutBtn">
+                            Proceed to Checkout →
+                        </button>
+                        <button class="clear-cart-btn" id="clearCartBtn">
+                            🗑️ Clear Cart
+                        </button>
+                    </div>
+
+                    <!-- Promo Code Section -->
+                    <div class="promo-section">
+                        <h4>Have a Promo Code?</h4>
+                        <div class="promo-input-group">
+                            <input type="text" placeholder="Enter code..." id="promoInput">
+                            <button id="applyPromoBtn">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empty Cart State -->
+    <section class="empty-cart-section" id="emptyCartSection" style="display: none;">
+        <div class="empty-cart-container">
+            <div class="empty-cart-content">
+                <div class="empty-cart-icon">🛒</div>
+                <h2>Your Cart is Empty</h2>
+                <p>Looks like you haven't added any items to your cart yet.</p>
+                <p class="empty-sub">Browse our collection and find your perfect coffee!</p>
+                <a href="/all-coffees.html" class="browse-btn">Browse Coffees ☕</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <span class="logo-icon">☕</span>
+                    <span class="logo-text">Coffee House</span>
+                </div>
+                <p class="footer-description">Serving happiness one cup at a time. Premium coffee experience since 2010.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">🎵</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="/dashboard.html">Home</a></li>
+                    <li><a href="/all-coffees.html">All Coffees</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Coffee Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Espresso Based</a></li>
+                    <li><a href="#">Brewed Coffee</a></li>
+                    <li><a href="#">Cold Brews</a></li>
+                    <li><a href="#">Specialty Drinks</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <ul class="footer-links contact-info">
+                    <li>📍 123 Coffee Street, Downtown</li>
+                    <li>📞 +1 (555) 123-4567</li>
+                    <li>✉️ hello@coffeehouse.com</li>
+                    <li>🕐 Mon-Sun: 7am - 10pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2024 Coffee House. All rights reserved. ☕ Freshly brewed with passion.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Returns & Refunds</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

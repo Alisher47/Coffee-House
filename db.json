@@ -405,6 +405,34 @@
       "size": "Large",
       "image": "../../assets/images/mayur-QxfXv6v22lA-unsplash.jpg",
       "description": "Slow-steeped coffee infused with vanilla flavor."
+    },
+    {
+      "id": 4,
+      "name": "Iced Americano",
+      "categoryId": 2,
+      "category": "Cold Coffee",
+      "price": 4.49,
+      "rating": 4.6,
+      "reviews": 75,
+      "in_stock": 60,
+      "featured": false,
+      "size": "Medium",
+      "image": "../../assets/images/andrew-valdivia-mMI5sdLFoHM-unsplash.jpg",
+      "description": "Refreshing cold espresso served over ice."
+    },
+    {
+      "id": 7,
+      "name": "Flat White",
+      "categoryId": 3,
+      "category": "Espresso Drinks",
+      "price": 4.79,
+      "rating": 4.7,
+      "reviews": 90,
+      "in_stock": 45,
+      "featured": false,
+      "size": "Medium",
+      "image": "../../assets/images/flatwhite-coffee.jpg",
+      "description": "Smooth espresso with silky steamed milk."
     }
   ],
   "orders": [
