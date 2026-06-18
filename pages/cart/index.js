@@ -7,17 +7,50 @@ let itemCount = document.querySelector(".item-count");
 // get the items;
 let coffeeItems = [];
 
+// get the subtotal field;
+let subTotal = document.getElementById("subtotal");
+// get the delivery fee field;
+let deliveryFee = document.getElementById("deliveryFee");
+// get tax field;
+let tax = document.getElementById("tax");
+// get Total Field;
+let total = document.getElementById("total");
+// promo code;
+let promoValue = "PAK097";
+
 // fetch the cart items array;
 const fetchCartItems = async () => {
-  try {
-    let items = await getCart();
-    cartCount.innerHTML = items.length;
-    itemCount.innerHTML = `${items.length} items `;
-    coffeeItems = items;
-    console.log("coffee items", coffeeItems);
-    await handleCartItems(items);
-  } catch (error) {
-    throw error;
+  let items = await getCart();
+
+  coffeeItems = items;
+
+  cartCount.textContent = coffeeItems.length;
+  itemCount.textContent = `${coffeeItems.length} items`;
+
+  updateTotals();
+  handleCartItems(coffeeItems);
+};
+
+const updateTotals = (code) => {
+  const subTotalPrice = coffeeItems.reduce((acc, item) => {
+    return acc + item.price * item.quantity;
+  }, 0);
+
+  subTotal.textContent = `$${subTotalPrice}`;
+
+  const deliveryFeePrice = subTotalPrice * 0.1;
+  deliveryFee.textContent = `$${deliveryFeePrice.toFixed(2)}`;
+
+  const taxAmount = subTotalPrice * 0.08;
+  tax.textContent = `$${taxAmount.toFixed(2)}`;
+
+  let totalAmount = subTotalPrice + deliveryFeePrice + taxAmount;
+  total.textContent = `$${totalAmount.toFixed(2)}`;
+
+  if (code === promoValue) {
+    let promoCodeAmount = subTotalPrice + deliveryFeePrice + taxAmount * 0.1;
+
+    total.textContent = `$${promoCodeAmount.toFixed(2)}`;
   }
 };
 
@@ -85,41 +118,38 @@ const handleDeleteItem = async (productId) => {
 let increament = document.getElementById("cart-items-container");
 increament.addEventListener("click", (e) => {
   let increamentButton = e.target.closest(".plus-btn");
-  let itemId = increamentButton.dataset.id;
- 
-  if(increamentButton){
-    alert(itemId);
-  }
-
-
   if (!increamentButton) return;
 
+  let itemId = increamentButton.dataset.id;
 
   const quantityElement =
     increamentButton.parentElement.querySelector(".quantity-value");
 
   let selectedItem = coffeeItems.find((item) => item.id == itemId);
 
-  console.log('selected', itemId);
-
-
-
-  
+  if (increamentButton) {
+    quantityElement.textContent = ++selectedItem.quantity;
+    updateTotals();
+  }
 });
 
 // decreament button for decrease quantity;
 let decreament = document.getElementById("cart-items-container");
 decreament.addEventListener("click", async (e) => {
   let decreamentButton = e.target.closest(".minus-btn");
+
   if (!decreamentButton) return;
+  let itemId = decreamentButton.dataset.id;
 
-  if (quantity > 1) {
-    quantity--;
+  let selectedItem = coffeeItems.find((item) => item.id == itemId);
+
+  if (selectedItem.quantity > 1) {
+    const quantityElement =
+      decreamentButton.parentElement.querySelector(".quantity-value");
+
+    quantityElement.textContent = --selectedItem.quantity;
+    updateTotals();
   }
-
-  const quantityElement =
-    decreamentButton.parentElement.querySelector(".quantity-value");
-  quantityElement.textContent = quantity;
 });
 
 let btn = document.getElementById("cart-items-container");
@@ -131,6 +161,22 @@ btn.addEventListener("click", async (e) => {
   let coffeeId = removeButton.dataset.id;
   let selectedItem = coffeeItems.find((item) => item.id == coffeeId);
   await handleDeleteItem(selectedItem.id);
+});
+
+// set the hardcoded promo code value;
+
+let text = document.querySelector(".promo-message");
+
+// get the apply button;
+let applyCode = document.getElementById("applyPromoBtn");
+applyCode.addEventListener("click", () => {
+  let promoCode = document.getElementById("promoInput").value.trim();
+  if (promoCode === promoValue) {
+    text.innerHTML = "Promo Code Applied! Enjoy Your 10% Off 🎉";
+  } else {
+    text.innerHTML = "Wrong Promo Code! Please Try Again";
+  }
+  updateTotals(promoCode);
 });
 
 fetchCartItems();

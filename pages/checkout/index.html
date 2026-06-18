@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House - Checkout</title>
+    <link rel="stylesheet" href="../../assets/css/checkout/index.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">☕</span>
+                <span class="logo-text">Coffee House</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/dashboard.html" class="nav-link">Home</a></li>
+                <li><a href="/all-coffees.html" class="nav-link">All Coffees</a></li>
+                <li><a href="/about.html" class="nav-link">About</a></li>
+                <li><a href="/contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="cart-icon">
+                    <span>🛒</span>
+                    <span class="cart-count">3</span>
+                </div>
+                <div class="user-avatar">
+                    <span>👤</span>
+                </div>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Checkout Hero Section -->
+    <section class="checkout-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Secure <span class="highlight">Checkout</span></h1>
+                <p class="hero-subtitle">Complete your order with confidence</p>
+                <div class="hero-decoration">
+                    <span>💳</span>
+                    <span>🔒</span>
+                    <span>☕</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Content -->
+    <section class="checkout-section">
+        <div class="section-container">
+            <div class="checkout-layout">
+                <!-- Left Column - Billing & Payment -->
+                <div class="checkout-form-wrapper">
+                    <!-- Progress Steps -->
+                    <div class="checkout-steps">
+                        <div class="step active">
+                            <span class="step-number">1</span>
+                            <span class="step-label">Billing</span>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <span class="step-label">Payment</span>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <span class="step-label">Confirm</span>
+                        </div>
+                    </div>
+
+                    <!-- Billing Information -->
+                    <div class="checkout-card">
+                        <h3>Billing Information</h3>
+                        <form id="billingForm" class="billing-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" placeholder="John" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" placeholder="Doe" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="+1 (555) 123-4567">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Street Address</label>
+                                <input type="text" id="address" placeholder="123 Coffee Street" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" placeholder="New York" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" placeholder="NY" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="zip">Zip Code</label>
+                                    <input type="text" id="zip" placeholder="10001" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <select id="country" required>
+                                        <option value="">Select Country</option>
+                                        <option value="US">United States</option>
+                                        <option value="UK">United Kingdom</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="DE">Germany</option>
+                                        <option value="FR">France</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Stripe Payment Section -->
+                    <div class="checkout-card payment-card">
+                        <h3>Payment Method</h3>
+                        <div class="payment-icons">
+                            <span class="payment-icon">💳</span>
+                            <span class="payment-icon">💳</span>
+                            <span class="payment-icon">💳</span>
+                            <span class="payment-icon">💳</span>
+                            <span class="payment-icon">🔒</span>
+                        </div>
+                        <div class="payment-methods">
+                            <div class="payment-method active">
+                                <input type="radio" name="payment" id="card" checked>
+                                <label for="card">Credit / Debit Card</label>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" name="payment" id="paypal">
+                                <label for="paypal">PayPal</label>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" name="payment" id="applepay">
+                                <label for="applepay">Apple Pay</label>
+                            </div>
+                        </div>
+
+                        <!-- Stripe Card Elements -->
+                        <div class="stripe-container">
+                            <div class="form-group">
+                                <label>Card Number</label>
+                                <div class="stripe-input">
+                                    <span class="stripe-icon">💳</span>
+                                    <input type="text" placeholder="4242 4242 4242 4242" class="card-input" id="cardNumber">
+                                    <span class="card-type">VISA</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Expiration Date</label>
+                                    <div class="stripe-input">
+                                        <input type="text" placeholder="MM / YY" class="card-input" id="expiry">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>CVC</label>
+                                    <div class="stripe-input">
+                                        <input type="text" placeholder="•••" class="card-input" id="cvc" maxlength="4">
+                                        <span class="cvc-tooltip">🔒</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Name on Card</label>
+                                <div class="stripe-input">
+                                    <input type="text" placeholder="John Doe" class="card-input" id="cardName">
+                                </div>
+                            </div>
+                            <div class="secure-badge">
+                                <span>🔒</span>
+                                <span>Your payment is secure and encrypted</span>
+                            </div>
+                        </div>
+
+                        <button class="pay-btn" id="payBtn">
+                            <span>💳</span> Pay $0.00 <span>→</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column - Order Summary -->
+                <div class="order-summary-wrapper">
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div class="order-items" id="orderItems">
+                            <!-- Order items will be dynamically loaded -->
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Delivery Fee</span>
+                            <span id="deliveryFee">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax (8%)</span>
+                            <span id="tax">$0.00</span>
+                        </div>
+                        <div class="summary-row promo-row">
+                            <span>Promo Discount</span>
+                            <span id="discount">-$0.00</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <span id="total">$0.00</span>
+                        </div>
+                        <div class="guarantee-badge">
+                            <span>🛡️</span>
+                            <span>100% Secure Guarantee</span>
+                        </div>
+                    </div>
+
+                    <div class="trust-badges">
+                        <div class="trust-item">
+                            <span>🔒</span>
+                            <span>SSL Secure</span>
+                        </div>
+                        <div class="trust-item">
+                            <span>🛡️</span>
+                            <span>Fraud Protection</span>
+                        </div>
+                        <div class="trust-item">
+                            <span>⏰</span>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <span class="logo-icon">☕</span>
+                    <span class="logo-text">Coffee House</span>
+                </div>
+                <p class="footer-description">Serving happiness one cup at a time. Premium coffee experience since 2010.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">🎵</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="/dashboard.html">Home</a></li>
+                    <li><a href="/all-coffees.html">All Coffees</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Coffee Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Espresso Based</a></li>
+                    <li><a href="#">Brewed Coffee</a></li>
+                    <li><a href="#">Cold Brews</a></li>
+                    <li><a href="#">Specialty Drinks</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <ul class="footer-links contact-info">
+                    <li>📍 123 Coffee Street, Downtown</li>
+                    <li>📞 +1 (555) 123-4567</li>
+                    <li>✉️ hello@coffeehouse.com</li>
+                    <li>🕐 Mon-Sun: 7am - 10pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2024 Coffee House. All rights reserved. ☕ Freshly brewed with passion.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Returns & Refunds</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
